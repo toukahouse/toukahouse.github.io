@@ -1,0 +1,292 @@
+
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Desa Wibu Cuy</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="stylee.css">
+        <link rel="stylesheet" href="styleee.css">
+    <style>
+        body{
+            margin:0;
+            overflow: auto;
+        }
+        .header{
+            background-image: url('langit1.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            padding: 30px;
+            text-align: center;
+            color: #000000;
+            background-position: center;
+
+        }
+
+        .navbar{
+            overflow: hidden;
+            background-color: #363636;
+            position: sticky;
+            top: 0;
+            padding: 10px;
+
+        }
+
+        .navbar a{
+            font-size: 20px;
+            display: block;
+            float: left;
+            color: #ffffff;
+            padding-inline: 20px 20px;
+            padding: 10px 15px 10px 15px;
+
+        }
+
+        body{
+            background-color: #363636;
+            overflow: auto;
+        }
+        .navbar a:hover{
+            background-color: #000000;
+            color: #ffffff;
+            border-radius: 20px;
+
+        }
+        .navbar a.active{
+            background-color: #3f72af;
+            color: #000000;
+            border-radius: 20px;
+
+        }
+        .row{
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .side{
+            flex: 7%;
+            background-color: #1b1717;
+            padding: 20px;
+            color: #ffffff;
+    
+        }
+        .test-img{
+            flex: 30%;
+            padding: 7px;
+            background-repeat: no-repeat;
+            background-size: cover;
+            color: #000000;
+        }
+
+        .main{
+            flex: 70%;
+            background-color: #302e2e;
+            padding: 7px;
+            color: #ffffff;
+        
+        }
+        .tesimg{
+            background-color: #05ff05;
+            width: 100%;
+            padding: 10px;
+            background-image: url('anime5.webp');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+
+
+        }
+    </style>
+    </head>
+    <body>
+        <div class="header">
+            <h1>Desa Wisata</h1>
+            <p>Touring In Bali</p>
+
+        </div>
+        <div class="navbar">
+          <div id="wrap">
+            <form action="" autocomplete="on">
+            <input id="search" name="search" type="text" placeholder="Lu Mau Nyari Apaan? Bokep?"><input id="search_submit" value="Rechercher" type="submit">
+            </form>
+          </div>
+            <a href="#" class="active">Home</a>
+            <a href="paket.html">Paket</a>
+            <a href="#">About</a>
+            <a href="#">Profile</a>
+        </div>
+
+
+        <div class="row">
+            <div class="side">
+                <h2>News Update</h2>
+                <h5>deskripsi</h5>
+                <div class="" style="height:200px;">
+                    <img src="anime2.jpg" 
+                    style="height: 200px;">
+                </div>
+                <p>wisata merupakan kegiatan perjalanan yang bersifat sementara, dalam arti tidak untuk tinggal menetap ditempat yang dikunjungi tersebut kegiatan perjalanan tersebut dilakukan secara sukarela (volentir), tidak karena paksaan</p>
+
+                <h2>News Update</h2>
+                <h5>deskripsi</h5>
+                <div class="test-img" style="height:200px;">Gambar</div>
+                <p>wisata merupakan kegiatan perjalanan yang bersifat sementara, dalam arti tidak untuk tinggal menetap ditempat yang dikunjungi tersebut kegiatan perjalanan tersebut dilakukan secara sukarela (volentir), tidak karena paksaan</p>
+            </div>
+            <div class="main">
+                <div class="container">
+
+                    <div class="slide" style="background-image: url('b1.png');">
+                        <h5>TOUKA MENGGODA</h5>
+                    </div>
+
+                    <div class="slide"style="background-image: url('b2.png');">
+                        <h5>KURUMI LAGI SELFIE</h5>
+                    </div>
+
+                    <div class="slide"style="background-image: url('b3.png');">
+                        <h5>SHIDO MELUK KURUMI</h5>
+                    </div>
+
+                    <div class="slide" style="background-image: url('b4.png');">
+                        <h5>KURUMI ULTRA NEESAN</h5>
+                    </div>
+
+                    <div class="slide" style="background-image: url('b5.png');">
+                        <h5>KURUMI MAU NEMBAK SHIDO</h5>
+                    </div>
+                </div>
+
+                <script>
+                    activeslideimg();
+
+                    function activeslideimg(activeSlide = 2 ) {
+                        const slides = document.querySelectorAll(".slide");
+
+                        slides[activeSlide].classList.add("active");
+
+
+                        for (const slide of slides) {
+                            slide.addEventListener("click", () => {
+                                clearActiveClasses();
+
+                                slide.classList.add("active");
+                            });
+                        }
+
+                        function clearActiveClasses() {
+                            slides.forEach((slide) => {
+                                slide.classList.remove("active");
+                            })
+                        }
+
+
+                    }
+                </script>
+                <h2>Judul Konten</h2>
+                <h5>Deskripsinya</h5>
+                <div class="tesimg" style="height: 200px;"></div>
+                <p>Deskripsi Lengkap Konten, Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque praesentium tempore cum fugit nesciunt molestiae, sint, magni enim doloribus temporibus quas aperiam assumenda quam, officiis et iure libero ut maiores?</p>
+                
+                <h2>Judul Konten</h2>
+                <h5>Deskripsinya</h5>
+                <div class="tesimg" style="height: 200px;"></div>
+                <p>Deskripsi Lengkap Konten, Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque praesentium tempore cum fugit nesciunt molestiae, sint, magni enim doloribus temporibus quas aperiam assumenda quam, officiis et iure libero ut maiores?</p>
+            </div>
+        </div>
+        
+
+    </body>
+
+    <footer class="footer">
+        <div class="footer__addr">
+          <h1 class="footer__logo">Something</h1>
+              
+          <h2>Contact</h2>
+          
+          <address>
+            5534 Somewhere In. The World 22193-10212<br>
+                
+            <a class="footer__btn" href="toukakazou@gmail.com">Email Us</a>
+          </address>
+        </div>
+        
+        <ul class="footer__nav">
+          <li class="nav__item">
+            <h2 class="nav__title">Media</h2>
+      
+            <ul class="nav__ul">
+              <li>
+                <a href="#">Online</a>
+              </li>
+      
+              <li>
+                <a href="#">Print</a>
+              </li>
+                  
+              <li>
+                <a href="#">Alternative Ads</a>
+              </li>
+            </ul>
+          </li>
+          
+          <li class="nav__item nav__item--extra">
+            <h2 class="nav__title">Technology</h2>
+            
+            <ul class="nav__ul nav__ul--extra">
+              <li>
+                <a href="#">Hardware Design</a>
+              </li>
+              
+              <li>
+                <a href="#">Software Design</a>
+              </li>
+              
+              <li>
+                <a href="#">Digital Signage</a>
+              </li>
+              
+              <li>
+                <a href="#">Automation</a>
+              </li>
+              
+              <li>
+                <a href="#">Artificial Intelligence</a>
+              </li>
+              
+              <li>
+                <a href="#">IoT</a>
+              </li>
+            </ul>
+          </li>
+          
+          <li class="nav__item">
+            <h2 class="nav__title">Legal</h2>
+            
+            <ul class="nav__ul">
+              <li>
+                <a href="#">Privacy Policy</a>
+              </li>
+              
+              <li>
+                <a href="#">Terms of Use</a>
+              </li>
+              
+              <li>
+                <a href="#">Sitemap</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+        
+        <div class="legal">
+          <p>&copy; 2022 Something. All rights reserved.</p>
+          
+          <div class="legal__links">
+            <span>Made with <span class="heart">♥</span> Touka Kazou</span>
+          </div>
+        </div>
+      </footer>
+</html>
